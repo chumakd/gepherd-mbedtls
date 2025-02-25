@@ -3,13 +3,13 @@
     .version = "3.6.1",
     .dependencies = .{
         .mbedtls = .{
-            .url = "https://github.com/Mbed-TLS/mbedtls/archive/refs/tags/mbedtls-3.6.1.tar.gz",
-            .hash = "1220b612b5a244c7b5ad5482cf2bb838e5d565abee98190220f3c568e847cd44306b",
+            .path = "src",
         },
     },
     .paths = .{
         "LICENSE",
         "build.zig",
         "build.zig.zon",
+        "src",
     },
 }
