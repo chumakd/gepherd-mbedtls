@@ -34,6 +34,7 @@ pub fn build(b: *Build) void {
         .link_libc = true,
     });
     selftest.defineCMacro("MBEDTLS_SELF_TEST", null);
+    selftest.addIncludePath(mbedtls_dep.path("include"));
     selftest.addCSourceFile(.{
         .file = mbedtls_dep.path("programs/test/selftest.c"),
         .flags = &.{},
