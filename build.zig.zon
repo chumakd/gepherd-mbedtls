@@ -1,6 +1,7 @@
 .{
-    .name = "mbedtls",
-    .version = "3.6.1",
+    .name = .mbedtls,
+    .fingerprint = 0x841b00c247548313,
+    .version = "3.6.2",
     .dependencies = .{
         .mbedtls = .{
             .path = "src",
