@@ -4,3 +4,7 @@ help:
 .PHONY: src-update
 src-update:
 	git subtree pull -P src https://github.com/Mbed-TLS/mbedtls.git master
+
+.PHONY: update
+update:
+	git fetch https://github.com/allyourcodebase/mbedtls.git
